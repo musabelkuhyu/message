@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Love button</title>
+	<style>
+		body {
+			background-color: pink;
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			color: white;
+			text-align: center;
+			font-size: 20px;
+			margin-top: 50px;
+		}
+		button {
+			background-color: white;
+			color: pink;
+			border: 2px solid pink;
+			font-size: 10px;
+			padding: 8px 16px;
+			margin-top: 50px;
+			cursor: pointer;
+			display: block;
+			margin: auto;
+		}
+		p {
+			color: white;
+			text-align: center;
+			font-size: 10px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			display: none;
+		}
+	</style>
+	<script>
+		function displayLoveMessage() {
+			document.getElementById("loveMessage").style.display = "block";
+		}
+	</script>
+</head>
+<body>
+	<h1>To my crush</h1>
+	<button onclick="displayLoveMessage()">Click me</button>
+	<p id="loveMessage">I love you</p>
+</body>
+</html>
